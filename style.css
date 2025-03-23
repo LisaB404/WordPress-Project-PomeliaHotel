@@ -1,0 +1,441 @@
+/*
+Theme Name: My Theme
+Theme URI: http://localhost/progetti/wordpress_project
+Author: LisaB
+Author URI: http://localhost/progetti/wordpress_project
+Description: WordPress custom theme created from scratch.
+Version: 1.0
+*/
+
+
+/*--------------------------
+General
+--------------------------*/
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", serif;
+}
+
+:root {
+  /*custom variables*/
+  /*colors*/
+  --primary-color: #106a48;
+  --secondary-color: #00ffcd;
+  --tertiary-color: #63d14a;
+  --dark-color: #000000;
+  --clear-color: #ffffff;
+}
+
+
+/* Header & Menu */
+a {
+  color: var(--clear-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  padding: 20px;
+  background: var(--primary-color);
+}
+.header__logo {
+  float: left;
+  color: var(--clear-color);
+  text-decoration: none;
+}
+.header__menu {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header__menu .menu-item {
+  display: inline-block;
+}
+.header__menu .menu-item a {
+  padding: 5px 10px;
+  color: var(--clear-color);
+  text-decoration: none;
+}
+.header__menu .menu-item a:hover {
+  color: var(--secondary-color);
+}
+
+.header__icon-bar {
+  display: none;
+}
+.header__icon-bar span {
+  display: block;
+  height: 2px;
+  width: 23px;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  padding: 1em;
+  color: var(--clear-color);
+  background-image: linear-gradient(rgba(16, 106, 72, 0) 2%, #63d14a 30%, #106a48 100%);
+}
+
+/* PAGE TITLE */
+.page-title{
+  text-align: center;
+  padding: 1em;
+  color: var(--clear-color);
+  background-image: linear-gradient(#106a48 2%, #63d14a 70%, rgba(16, 106, 72, 0) 100%);
+}
+
+
+/*--------------------------
+Hero-Page
+--------------------------*/
+.hero-container {
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-div {
+  min-height: 60vh;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 5em;
+  border-radius: 10px;
+  background-image: linear-gradient(#63d14a, #106a48 80%);
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 4em;
+}
+
+h1{
+  text-align: center;
+  color: var(--clear-color);
+}
+
+.hero-btn {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding-bottom: 4em;
+}
+
+button {
+  padding: 15px;
+  padding-inline: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiaty-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: var(--tertiary-color);
+}
+
+
+/*--------------------------
+Rooms Page
+--------------------------*/
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .section-top, .section-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 2em;
+  }
+  
+  .image {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .text {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .room-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+
+/*--------------------------
+About Us Page
+--------------------------*/
+.about-container {
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.about-title-div {
+ width: 35%;
+}
+
+h3 {
+  color: var(--clear-color);
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#63d14a, #106a48 90%);
+  border-radius: 30px;
+}
+
+.about-text-div {
+  width: 55%;
+  border: 3px dotted var(--tertiary-color);
+  padding: 1.5em;
+}
+
+.about-text {
+  line-height: 1.5em;
+  text-align: left;
+}
+
+
+/*--------------------------
+Contact Us Page
+--------------------------*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(21, 249, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  color: var(--primary-color);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.wpcf7-submit {
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiaty-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wpcf7-submit:hover {
+  background-color: var(--tertiary-color);
+}
+
+/*--------------------------
+404 Page
+--------------------------*/
+.error-container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+}
+
+.error-title {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.error-container a {
+  padding: 15px;
+  padding-inline: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiaty-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.error-container a:hover {
+  background-color: var(--tertiary-color);
+}
+
+/*--------------------------
+Smartphone
+--------------------------*/
+
+@media (max-width: 767px) {
+  /*Header & Menu */
+  .header__logo {
+    margin-bottom: 20px;
+  }
+  .header__menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .header__menu .menu-item {
+    display: block;
+  }
+  .header__menu .menu-item a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #666;
+  }
+
+  .header__icon-bar {
+    float: right;
+    display: block;
+  }
+
+  .header__icon-bar span {
+    background-color: var(--clear-color);
+  }
+
+  .show-menu {
+    height: 200px;
+    overflow: auto;
+  }
+
+  /*Rooms*/
+  .section-top {
+    flex-direction: column;
+    gap: 0em;
+  }
+  .section-bottom {
+    flex-direction: column-reverse;
+    gap: 0em;
+  }
+  .image, .text {
+    width: 100%;
+  }
+
+  /*About Us*/
+  .about-title-div {
+    width: 50%;
+  }
+
+  .about-text-div {
+    width: 80%;
+  }
+
+  .center-div {
+    min-width: 80vw;
+  }
+
+  .hero-btn {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-image {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 1em;
+    padding-inline: 1em;
+  }
+
+  .hero-title h1{
+    padding-inline: 0.5em;
+  }
+}
+
+/* Clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix {
+  zoom: 1;
+} /* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+} /* IE7 */
