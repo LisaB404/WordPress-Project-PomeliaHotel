@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-<div class="hero-container">
+<div class="hero-container" style="background-image: url('<?php echo get_theme_mod('hero_image'); ?>');">
     <div class="center-div">
         <div class="hero-title">
-            <img class="hero-image" src="<?php echo get_theme_mod('hero_image'); ?>" alt="Custom Logo">
             <h1><?php echo get_theme_mod('hero_title', 'Main title and motto'); ?></h1>
         </div>
         <div class="hero-btn">
